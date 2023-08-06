@@ -15,6 +15,7 @@ jobs:
       - uses: dtolnay/rust-toolchain@master
         with:
           components: clippy
+          toolchain: stable
       - uses: antifuchs/rust-problem-matchers@clippy-regex
       - run: cargo clippy -- -D warning
         working-directory: .
