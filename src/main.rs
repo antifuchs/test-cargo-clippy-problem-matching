@@ -1,3 +1,5 @@
 fn main() {
-    println!("Hello, world!");
+    if let Some(_) = Some(1) {
+        println!("Hello, world!");
+    }
 }
