@@ -8,8 +8,6 @@ on:
 jobs:
   cargo_clippy:
     runs-on: ubuntu-latest
-    env:
-      CARGO_TERM_COLOR: "never"
     steps:
       - uses: actions/checkout@v3
       - uses: dtolnay/rust-toolchain@master
