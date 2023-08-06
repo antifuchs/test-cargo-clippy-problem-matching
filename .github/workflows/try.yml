@@ -2,6 +2,8 @@ name: The point of this
 on:
   pull_request:
   workflow_dispatch:
+  push:
+    branches: ["main"]
 
 jobs:
   cargo_clippy:
