@@ -18,5 +18,5 @@ jobs:
           toolchain: stable
       - run: echo "::add-matcher::.github/problem-matcher.json"
         shell: bash
-      - run: cargo clippy -- -D warning
+      - run: cargo clippy -- -D warnings
         working-directory: .
