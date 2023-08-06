@@ -16,6 +16,7 @@ jobs:
         with:
           components: clippy
           toolchain: stable
-      - uses: antifuchs/rust-problem-matchers@clippy-regex
+      - run: "::add-matcher::.github/problem-matcher.json"
+        shell: bash
       - run: cargo clippy -- -D warning
         working-directory: .
